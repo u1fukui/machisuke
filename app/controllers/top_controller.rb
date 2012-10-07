@@ -15,8 +15,9 @@ class TopController < ApplicationController
     end
 
     @map = Map.new
-    @map.key = "aaa"
-    if @user.save
+    @map.key = UUIDTools::UUID.random_create.to_s()
+    @user.map_key = @map.key
+    if @user.save and @map.save
       redirect_to "/maps/" + @map.key
     else 
       render action: "create"
