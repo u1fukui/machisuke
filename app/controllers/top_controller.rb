@@ -19,7 +19,6 @@ class TopController < ApplicationController
     if @map.save
       @user.map_id = @map.id
       if @user.save
-        redirect_to "/maps/" + @map.key
         return
       end
     end

@@ -1,4 +1,6 @@
 <h1>Top#created Mobile</h1>
 <p>created</p>
 <p>lat=<%= @user.lat -%>, lon=<%= @user.lon -%></p>
-<div><img src="http://maps.google.com/maps/api/staticmap?zoom=16&center=<%= @user.lat -%>,<%= @user.lon -%>&size=240x240&sensor=true&mobile=true&marker=<%= @user.lat -%>,<%= @user.lon -%>" alt="map" width="240" height="240"></div>
+<div><img src="http://maps.google.com/maps/api/staticmap?zoom=16&center=<%= @user.lat -%>,<%= @user.lon -%>&size=240x240&sensor=true&mobile=true&markers=<%= @user.lat -%>,<%= @user.lon -%>" alt="map" width="240" height="240"></div>
+<br>
+<a href="mailto:?subject=subject&amp;body=http://u1fukui.com:3000/maps/<%= @map.key -%>">send mail</a>
