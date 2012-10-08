@@ -14,16 +14,16 @@
 ActiveRecord::Schema.define(:version => 20121007065916) do
 
   create_table "maps", :force => true do |t|
-    t.string   "key"
+    t.string   "key",        :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|
-    t.string   "map_key"
+    t.integer  "map_id",     :null => false
     t.string   "name"
-    t.float    "lat"
-    t.float    "lon"
+    t.float    "lat",        :null => false
+    t.float    "lon",        :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

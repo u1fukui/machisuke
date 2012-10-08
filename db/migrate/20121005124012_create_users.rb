@@ -1,10 +1,10 @@
 class CreateUsers < ActiveRecord::Migration
   def change
     create_table :users do |t|
-      t.string :map_key
+      t.integer :map_id, :null => false
       t.string :name
-      t.float :lat
-      t.float :lon
+      t.float :lat, :null => false
+      t.float :lon, :null => false
 
       t.timestamps
     end

@@ -1,3 +1,4 @@
 class User < ActiveRecord::Base
-  attr_accessible :lat, :lon, :map_key, :name
+  belongs_to :map
+  attr_accessible :lat, :lon, :map_id, :name
 end
