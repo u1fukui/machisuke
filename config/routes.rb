@@ -3,4 +3,5 @@ Machisuke::Application.routes.draw do
   get "/start" => "top#start"
   get "/maps/create" => "maps#create"
   get "/maps/:key" => "maps#show"
+  post "/maps/create" => "maps#create_api"
 end
