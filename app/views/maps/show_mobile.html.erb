@@ -1,4 +1,7 @@
-<h1>Maps#show Mobile</h1>
-<p>maps</p>
 <div><%= raw map_image_tag -%></div>
-<div><%= get_position_link_to("get position", :action => "show") -%></div>
+<div style="font-size:x-small;">
+  ▲みんなの位置情報だよ♪<br>
+  <br>
+  あなたの場所も地図上にマークしよう<br>
+  <%= get_position_link_to("現在地をマークする", :action => "show") -%>
+</div>

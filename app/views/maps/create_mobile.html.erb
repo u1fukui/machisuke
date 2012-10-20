@@ -1,5 +1,7 @@
-<h1>Maps#create Mobile</h1>
-<p>lat=<%= @user.lat -%>, lon=<%= @user.lon -%></p>
 <div><img src="http://maps.google.com/maps/api/staticmap?zoom=16&center=<%= @user.lat -%>,<%= @user.lon -%>&size=240x240&sensor=true&mobile=true&markers=<%= @user.lat -%>,<%= @user.lon -%>" alt="map" width="240" height="240"></div>
-<br>
-<a href="mailto:?subject=subject&amp;body=http://u1fukui.com:3000/maps/<%= @map.key -%>">send mail</a>
+<div style="font-size: x-small;">
+  ▲あなたの場所をマークしたよ！<br>
+  <br>
+  この地図のURLをお友達に送って、友達の位置も教えてもらおう♪<br>
+  <a href="mailto:?subject=subject&body=http://u1fukui.com:3000/maps/<%= @map.key -%>">この地図を友達に教える</a>
+</a>
